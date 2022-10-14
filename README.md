@@ -1,2 +1,2 @@
 ﻿# DeliveryFoodTestApp
-![Screenshot](Screenshot_20221014_224520.png | 640x360)
+![Screenshot](Screenshot_20221014_224520.png | width="6400" height="360")

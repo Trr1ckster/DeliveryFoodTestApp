@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.trr1ckster.deliveryfoodtestapp.adapters.FoodAdapter
 import com.trr1ckster.deliveryfoodtestapp.databinding.FragmentMainBinding
+import com.trr1ckster.deliveryfoodtestapp.viewmodels.MainViewModel
 
 class MainFragment : Fragment() {
 
@@ -22,14 +23,14 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerAdapter = FoodAdapter()
         binding.recyclerView.adapter = recyclerAdapter
 
-        viewModel.pizzaLiveData.observe(viewLifecycleOwner) {
+        viewModel.pizza.observe(viewLifecycleOwner) {
             recyclerAdapter.differ.submitList(it)
         }
 

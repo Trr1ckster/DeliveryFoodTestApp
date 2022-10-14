@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipCornerRadius">6dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/sfuidisplay_regular</item>
+        <item name="elevation">10dp</item>
+    </style>
+    
+
+</resources>
